@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Restaurantes.Models.Restaurante>
+
+@{
+	ViewData["Title"] = "Index";
+}
+
+<h2>Lista restaurantes abertos</h2>
+<br />
+<div class="row">
+	<div class="col-4">
+		<label>Horário</label>
+		@using (Html.BeginForm("FilterByTime", "Restaurante", FormMethod.Post))
+		{
+			<input type="time" name="time" id="time" />
+			<input type="submit" value="Filtrar" class="btn btn-primary"/>
+		}
+	</div>
+</div>
+<br />
+<table class="table" id="list_restaurantes">
+	<thead>
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.Nome)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.OpenTime)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.CloseTime)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.Nome)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.OpenTime)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.CloseTime)
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$("#list_restaurantes").DataTable({
+			"searching": false
+		});
+	})
+</script>

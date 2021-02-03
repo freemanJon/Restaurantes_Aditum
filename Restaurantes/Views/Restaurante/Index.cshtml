@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<br />
+<div class="row mt-6">
+	<div class="col-12 d-flex justify-content-center align-items-center">
+		<div class="card mb-3">
+			<div class="card-header">
+				Explicação ação
+			</div>
+			<div class="card-body">
+				<p class="card-text">Ao clicar no botão a base de dados será populada com a planilha de restaurantes, caso ela já esteja populada, ela somente irá direcionar para a listagem de restaurante.</p>
+				@Html.ActionLink("Popular", "CreateRestaurantesInDatabase", "Restaurante", null, new { @class = "btn btn-lg btn-primary" })
+			</div>
+		</div>
+	</div>
+</div>
+<br />
+
+
+
+
