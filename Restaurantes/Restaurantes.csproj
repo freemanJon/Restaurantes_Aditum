@@ -7,10 +7,86 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\Razor\Views\Restaurante\Index.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\Razor\Views\Restaurante\List.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\Restaurantes.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\Restaurantes.RazorAssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\Restaurantes.RazorTargetAssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp3.1\appsettings.Development.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\appsettings.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\Restaurantes.deps.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\Restaurantes.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\Restaurantes.runtimeconfig.json" />
+    <Content Include="obj\Debug\netcoreapp3.1\Restaurantes.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\netcoreapp3.1\staticwebassets\Restaurantes.StaticWebAssets.xml" />
+    <Content Include="obj\project.assets.json" />
+    <Content Include="obj\Restaurantes.csproj.nuget.dgspec.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp3.1\DnsClient.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\libzstd.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\MongoDB.Bson.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\MongoDB.Driver.Core.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\MongoDB.Driver.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\MongoDB.Libmongocrypt.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Restaurantes.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Restaurantes.exe" />
+    <None Include="bin\Debug\netcoreapp3.1\Restaurantes.pdb" />
+    <None Include="bin\Debug\netcoreapp3.1\Restaurantes.Views.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Restaurantes.Views.pdb" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win\native\libzstd.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win\native\snappy32.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win\native\snappy64.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\SharpCompress.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\snappy32.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\snappy64.dll" />
+    <None Include="obj\Debug\netcoreapp3.1\apphost.exe" />
+    <None Include="obj\Debug\netcoreapp3.1\Restaurantes.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\Restaurantes.assets.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\Restaurantes.csproj.CopyComplete" />
+    <None Include="obj\Debug\netcoreapp3.1\Restaurantes.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\Restaurantes.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\Restaurantes.dll" />
+    <None Include="obj\Debug\netcoreapp3.1\Restaurantes.genruntimeconfig.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\Restaurantes.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\Restaurantes.pdb" />
+    <None Include="obj\Debug\netcoreapp3.1\Restaurantes.RazorAssemblyInfo.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\Restaurantes.RazorCoreGenerate.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\Restaurantes.RazorTargetAssemblyInfo.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\Restaurantes.TagHelpers.input.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\Restaurantes.TagHelpers.output.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\Restaurantes.Views.dll" />
+    <None Include="obj\Debug\netcoreapp3.1\Restaurantes.Views.pdb" />
+    <None Include="obj\Debug\netcoreapp3.1\staticwebassets\Restaurantes.StaticWebAssets.Manifest.cache" />
+    <None Include="obj\project.nuget.cache" />
+    <None Include="obj\Restaurantes.csproj.nuget.g.props" />
+    <None Include="obj\Restaurantes.csproj.nuget.g.targets" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
     <PackageReference Include="MongoDB.Bson" Version="2.11.6" />
     <PackageReference Include="MongoDB.Driver" Version="2.11.6" />
     <PackageReference Include="MongoDB.Driver.Core" Version="2.11.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\" />
+    <Folder Include="bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\" />
+    <Folder Include="bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\" />
+    <Folder Include="bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\" />
+    <Folder Include="bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\" />
+    <Folder Include="bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\" />
+    <Folder Include="obj\Container\" />
   </ItemGroup>
 
 </Project>
