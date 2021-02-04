@@ -6,4 +6,4 @@ Projeto criado para processo seletivo da Aditum, onde consiste em pegar um CSV e
 
 <h2>Como rodar a solução</h2>
 
-<p>Basicamente temos que clonar o repositório <b>Restaurantes_Aditum</b>, quando clonado temos apenas que compilar a aplicação, logo em seguida rodamos ela, isso para o caso da aplicação web. Caso queira rodar os testes, temos que ir na aba <b>Teste > Executar todos os testes</b></p>
+<p>Basicamente temos que clonar o repositório <b>Restaurantes_Aditum</b>, quando clonado temos apenas que compilar a aplicação, logo em seguida rodamos ela, isso para o caso da aplicação web. Caso queira rodar os testes, temos que ir na aba <b>Teste > Executar todos os testes.</b></p>
