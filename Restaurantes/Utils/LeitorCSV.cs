@@ -1,4 +1,5 @@
-﻿using Restaurantes.Models;
+﻿using Restaurantes.Interfaces;
+using Restaurantes.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Restaurantes.Utils
 {
-    public class LeitorCSV
+    public class LeitorCSV:ILeitorCSV
     {
         //LER ARQUIVO CSV E TRANSFORMAR EM OBJETO RESTAURANTE
         //Complexidade O(n)

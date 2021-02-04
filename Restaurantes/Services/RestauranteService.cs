@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Restaurantes.Repositories;
+using Restaurantes.Interface;
 
 namespace Restaurantes.Services
 {
@@ -33,19 +33,25 @@ namespace Restaurantes.Services
             return true;
         }
 
+        public Restaurante GetByName(string name)
+        {
+            Restaurante restaurante = _restaurantes.Find(x => x.Nome == name).FirstOrDefault();
+            return restaurante;
+        }
+
         public List<Restaurante> GetAll()
         {
             List<Restaurante> restaurantes = _restaurantes.Find(x => true).ToList();
             return restaurantes;
         }
 
-        public List<Restaurante> GetByFilterTime(string time)
+        public List<Restaurante> GetByFilterTime(TimeSpan time)
         {
             List<Restaurante> AuxRestaurantes = GetAll();
             List<Restaurante> restaurantes = new List<Restaurante>();
             foreach(var restaurante in AuxRestaurantes)
             {
-                if((TimeSpan.Parse(restaurante.OpenTime) <= TimeSpan.Parse(time) && TimeSpan.Parse(restaurante.CloseTime) >= TimeSpan.Parse(time))){
+                if((TimeSpan.Parse(restaurante.OpenTime) <= time && TimeSpan.Parse(restaurante.CloseTime) >= time)){
                     restaurantes.Add(restaurante);
                 }
             }

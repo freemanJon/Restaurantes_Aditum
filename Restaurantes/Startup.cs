@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 using Restaurantes.Models;
+using Restaurantes.Interface;
 using Restaurantes.Services;
 using System;
 using System.Collections.Generic;
@@ -28,7 +29,7 @@ namespace Restaurantes
         {
             services.Configure<DataBaseSettings>(Configuration.GetSection(nameof(DataBaseSettings)));
             services.AddSingleton<IDatabaseSettings>(x => x.GetRequiredService<IOptions<DataBaseSettings>>().Value);
-            services.AddSingleton<RestauranteService>();
+            services.AddScoped<IRestauranteRepository, RestauranteService>();
             services.AddControllersWithViews();
         }
 
